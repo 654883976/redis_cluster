@@ -1,0 +1,11 @@
+spring:
+  redis:
+    database: 0
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 10
+    cluster:
+      timeout: 1000
+      max-redirects: 3
+      nodes: 10.31.8.220:7000,10.31.8.220:7001,10.31.8.220:7002,10.31.8.220:7003,10.31.8.220:7004,10.31.8.220:7005
